@@ -24,11 +24,12 @@
             border-radius: 15px;
             width: 80%;
             text-align: center;
-            color: rgb(39, 248, 39);
-
-/*             color: darkgreen; */
-
+            color: rgb(22, 65, 22);
         }
+        .username{
+            color: rgb(197, 63, 63);
+        }
+       
     </style>
 </head>
 
@@ -44,7 +45,7 @@
    var waNumber = otplessUser.waNumber;
    // Signup/signin the user and redirect to next page
    document.getElementById('otpless').innerHTML = `
-<h2>Hi, ${waName} Welcome You have Loged in</h2>
+<h2>Hi,  <span class="username">${waName}</span> Welcome You have Loged in</h2>
 <p>Mobile Number :${waNumber}</p>   
 `;
   }
